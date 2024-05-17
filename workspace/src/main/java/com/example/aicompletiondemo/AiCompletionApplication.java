@@ -1,47 +1,45 @@
 package com.example.aicompletiondemo;
 
-import org.springframework.beans.factory.annotation.Value;
+import java.util.Collections;
+import java.util.List;
+
+import org.springframework.ai.client.AiClient;
+import org.springframework.ai.prompt.Prompt;
+import org.springframework.ai.prompt.messages.Message;
+import org.springframework.ai.prompt.messages.MessageType;
+import org.springframework.ai.prompt.messages.UserMessage;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.reactive.function.client.WebClient;
 
 @SpringBootApplication
 public class AiCompletionApplication implements CommandLineRunner {
+	private static final String ROLE_INFO_KEY = "role";
 
-    @Value("${SPRING_AI_AZURE_OPENAI_API_KEY}")
-    private String apiKey;
+	@Autowired
+	private AiClient aiClient;
 
-    @Value("${SPRING_AI_AZURE_OPENAI_ENDPOINT}")
-    private String endpoint;
+	public static void main(String[] args) {
+		SpringApplication.run(AiCompletionApplication.class, args);
+	}
 
-    @Value("${SPRING_AI_AZURE_OPENAI_MODEL}")
-    private String model;
+	@Override
+	public void run(String... args) throws Exception {
+		System.out.println(String.format("Sending completion prompt to AI service. One moment please...\r\n"));
 
-    public static void main(String[] args) {
-        SpringApplication.run(AiCompletionApplication.class, args);
-    }
+		final List<Message> msgs = Collections.singletonList(new UserMessage("When was Microsoft founded?"));
 
-    @Override
-    public void run(String... args) throws Exception {
-        String question = "What is the capital of France?";
-        String response = sendQuestionToAzureOpenAI(question);
-        System.out.println("Response from Azure OpenAI: " + response);
-    }
+		final var resps = aiClient.generate(new Prompt(msgs));
 
-    private String sendQuestionToAzureOpenAI(String question) {
-        WebClient webClient = WebClient.builder()
-                .baseUrl(endpoint)
-                .defaultHeader("Authorization", "Bearer " + apiKey)
-                .build();
+		System.out.println(String.format("Prompt created %d generated response(s).", resps.getGenerations().size()));
 
-        String response = webClient.post()
-                .uri(uriBuilder -> uriBuilder.path("/models/" + model + "/completions").build())
-                .bodyValue("{ \"prompt\": \"" + question + "\", \"max_tokens\": 5 }")
-                .retrieve()
-                .bodyToMono(String.class)
-                .block();
+		resps.getGenerations().stream()
+				.forEach(gen -> {
+					final var role = gen.getInfo().getOrDefault(ROLE_INFO_KEY, MessageType.ASSISTANT.getValue());
 
-        return response;
-    }
+					System.out.println(String.format("Generated respose from \"%s\": %s", role, gen.getText()));
+				});
+	}
+
 }
