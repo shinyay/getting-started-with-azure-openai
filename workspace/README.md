@@ -2,6 +2,12 @@
 
 ## Description
 
+1. Install Spring Boot CLI
+
+```shell
+sdk install springboot
+```
+
 ## Demo
 
 ## Features
