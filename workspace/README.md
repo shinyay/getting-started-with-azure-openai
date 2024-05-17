@@ -2,11 +2,15 @@
 
 ## Description
 
-1. Install Spring Boot CLI
+### 1. Install Spring Boot CLI
 
 ```shell
 sdk install springboot
 ```
+
+### 2. Create and Deploy an Azure OpenAI Service resource
+
+- [Guide](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?pivots=web-portal)
 
 ## Demo
 
