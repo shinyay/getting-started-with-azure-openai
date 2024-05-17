@@ -12,6 +12,8 @@ sdk install springboot
 
 - [Guide](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/create-resource?pivots=web-portal)
 
+![Image](https://github.com/shinyay/getting-started-with-azure-openai/assets/3072734/d0a73fea-3ede-4923-8314-852be2884374)
+
 ## Demo
 
 ## Features
