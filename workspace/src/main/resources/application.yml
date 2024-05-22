@@ -1,0 +1,9 @@
+spring:
+  ai:
+    azure:
+      openai:
+        api-key: YOUR_API_KEY
+        endpoint: YOUR_ENDPOINT
+        embedding:
+          options:
+            model: YOUR_MODEL_DEPLOYMENT_NAME
