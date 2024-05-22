@@ -14,9 +14,17 @@ sdk install springboot
 
 #### 2.1 Create a Resource Group
 
+![Image](https://github.com/shinyay/getting-started-with-azure-openai/assets/3072734/c95032c6-fe74-4e8c-8bad-373b0bc8179e)
+
 Create a Resource Group for Azure OpenAI Service.
 
-![Image](https://github.com/shinyay/getting-started-with-azure-openai/assets/3072734/c95032c6-fe74-4e8c-8bad-373b0bc8179e)
+#### 2.2 Create an Azure OpenAI Service resource
+
+![Image](https://github.com/shinyay/getting-started-with-azure-openai/assets/3072734/1d4a5378-c44f-4f56-869b-13bf7aebfa62)
+
+![Image](https://github.com/shinyay/getting-started-with-azure-openai/assets/3072734/595856c6-effb-4db5-ad41-21105f249cf7)
+
+Create an Azure OpenAI Service with the resource group created in the previous step.
 
 
 
