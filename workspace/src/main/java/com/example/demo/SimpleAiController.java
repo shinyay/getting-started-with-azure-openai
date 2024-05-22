@@ -14,7 +14,7 @@ public class SimpleAiController {
         this.chatClient = chatClient;
     }
 
-    @GetMapping("/generate")
+    @GetMapping("/ai/joke")
     public String generate(
             @RequestParam(value = "message", defaultValue = "Tell me a funny joke in Japanese") String message) {
         return chatClient.call(message);
