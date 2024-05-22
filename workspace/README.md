@@ -102,6 +102,17 @@ Create a Spring Boot Application with Spring AI for Azure OpenAI Service.
 - Add org.springframework.ai.chat.ChatClient and initialize it with Constructor Dependency Injection
 ```
 
+#### 3.5 Prompt for Azure OpenAI Service
+
+```markdown
+- Add a method to generate message with Azure OpenAI
+- Method name is "generate"
+- This methos is accessed with GET METHOD
+- Endpoint is "/ai/joke"
+- Parameter value is message
+- Parameter default value is "Tell me a funny joke in Japanese"
+- Use call method with ChatClient when you call Azure OpenAI Service
+```
 ## Demo
 
 ## Features
