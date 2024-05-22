@@ -41,10 +41,10 @@ Go to resouce, and confirm the Azure OpenAI Service resource created.
 
 ![Image](https://github.com/shinyay/getting-started-with-azure-openai/assets/3072734/6f641711-2960-48d2-bf8c-a9ca682c4e60)
 
-![Image](https://github.com/shinyay/getting-started-with-azure-openai/assets/3072734/2117706e-3655-4fc3-9f6b-52d59388b6d0)
+![Image](https://github.com/shinyay/getting-started-with-azure-openai/assets/3072734/1c5098a3-f441-4e49-b2f4-c50e90ada803)
 
-Then you can get the API Key from **Manage Keys**.
 
+Then you can get the API Key from the `Keys and Endpoint` menu.
 
 
 ## Demo
