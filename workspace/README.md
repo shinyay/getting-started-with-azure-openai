@@ -71,6 +71,18 @@ I selected deployment name as `shinyay-gpt`, which is used in your code to call 
 
 Create a Spring Boot Application with Spring AI for Azure OpenAI Service.
 
+#### 3.1 Create a project template with Spring Initializr
+
+#### 3.2 Modify a project template with Copilot Workspace
+
+```markdown
+- Create a Spring Project with Spring AI
+- Spring AI version is 0.8.1
+- Use spring-ai-azure-openai-spring-boot-starter
+- Build tool is Maven
+- Java version is 21
+- Group ID is com.microsoft.shinyay
+```
 
 ## Demo
 
