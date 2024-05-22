@@ -94,7 +94,13 @@ Create a Spring Boot Application with Spring AI for Azure OpenAI Service.
   - spring.ai.azure.openai.embedding.options.deployment-name="YOUR_MODEL_NAME"
 ```
 
-#### 3.3
+#### 3.4 Create a REST Controller
+
+```markdown
+- Add Spring Boot Starter Web into pom.xml
+- Add a REST controller class named by SimpleAiController
+- Add org.springframework.ai.chat.ChatClient and initialize it with Constructor Dependency Injection
+```
 
 ## Demo
 
