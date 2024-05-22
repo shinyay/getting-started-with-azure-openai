@@ -84,6 +84,18 @@ Create a Spring Boot Application with Spring AI for Azure OpenAI Service.
 - Group ID is com.microsoft.shinyay
 ```
 
+#### 3.3 Properties for Spring AI
+
+```markdown
+- Add application.yml under resources
+- Add the following properties to application.yml
+  - spring.ai.azure.openai.api-key="YOUR_API_KEY"
+  - spring.ai.azure.openai.endpoint="YOUR_ENDPOINT"
+  - spring.ai.azure.openai.embedding.options.deployment-name="YOUR_MODEL_NAME"
+```
+
+#### 3.3
+
 ## Demo
 
 ## Features
