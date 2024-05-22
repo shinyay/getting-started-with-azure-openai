@@ -31,7 +31,7 @@ Create an Azure OpenAI Service with the resource group created in the previous s
 - Option 1: Allow all networks
   - The first option allows all networks, including the internet, to access your resource. This option is the default setting. No extra settings are required for this option.
 
-
+And then, Create the Azure OpenAI Service.
 
 
 ![Image](https://github.com/shinyay/getting-started-with-azure-openai/assets/3072734/d0a73fea-3ede-4923-8314-852be2884374)
