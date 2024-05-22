@@ -33,8 +33,11 @@ Create an Azure OpenAI Service with the resource group created in the previous s
 
 And then, Create the Azure OpenAI Service.
 
+![Image](https://github.com/shinyay/getting-started-with-azure-openai/assets/3072734/71d85d78-0846-47f2-b208-db3c199682a7)
 
 ![Image](https://github.com/shinyay/getting-started-with-azure-openai/assets/3072734/d0a73fea-3ede-4923-8314-852be2884374)
+
+Confirm the Azure OpenAI Service resource created.
 
 ## Demo
 
