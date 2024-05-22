@@ -67,6 +67,10 @@ Select Model and confgure the deployment.
 
 I selected deployment name as `shinyay-gpt`, which is used in your code to call the model by using the client libraries and the REST APIs.
 
+### 3. Create a Spring Boot Application
+
+Create a Spring Boot Application with Spring AI for Azure OpenAI Service.
+
 
 ## Demo
 
