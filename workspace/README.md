@@ -47,6 +47,13 @@ Go to resouce, and confirm the Azure OpenAI Service resource created.
 Then you can get the API Key from the `Keys and Endpoint` menu.
 
 
+#### 2.4 Deploy a Model
+
+![Image](https://github.com/shinyay/getting-started-with-azure-openai/assets/3072734/0569602a-99ff-44dc-b461-b06ce7c7dda9)
+
+Open the Azure OpenAI Studio.
+- [Azure OpenAI Studio](https://oai.azure.com/portal)
+
 ## Demo
 
 ## Features
