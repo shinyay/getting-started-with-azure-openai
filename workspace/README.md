@@ -65,6 +65,7 @@ Select **Deployments** under **Management**.
 
 Select Model and confgure the deployment.
 
+I selected deployment name as `shinyay-gpt`, which is used in your code to call the model by using the client libraries and the REST APIs.
 
 
 ## Demo
