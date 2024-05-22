@@ -58,6 +58,15 @@ Open the Azure OpenAI Studio.
 
 Select **Deployments** under **Management**.
 
+
+![Image](https://github.com/shinyay/getting-started-with-azure-openai/assets/3072734/fca4cd92-37b4-4ecf-a8c5-664eb2f4e1b1)
+
+![Image](https://github.com/shinyay/getting-started-with-azure-openai/assets/3072734/8ec932ee-af8f-494a-826c-2bd659c554ad)
+
+Select Model and confgure the deployment.
+
+
+
 ## Demo
 
 ## Features
