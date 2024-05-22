@@ -54,6 +54,10 @@ Then you can get the API Key from the `Keys and Endpoint` menu.
 Open the Azure OpenAI Studio.
 - [Azure OpenAI Studio](https://oai.azure.com/portal)
 
+![Image](https://github.com/shinyay/getting-started-with-azure-openai/assets/3072734/15981cdd-3208-4789-bb7f-fd30abd59f84)
+
+Select **Deployments** under **Management**.
+
 ## Demo
 
 ## Features
