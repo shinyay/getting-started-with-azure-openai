@@ -117,6 +117,10 @@ Create a Spring Boot Application with Spring AI for Azure OpenAI Service.
 ```
 ## Demo
 
+```shell
+curl -X GET http://localhost:8080/ai/recipe
+```
+
 ## Features
 
 - feature:1
