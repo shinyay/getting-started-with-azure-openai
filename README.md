@@ -10,6 +10,8 @@ The detailed procedure is written in the following document:
 
 ## Demo
 
+Start from `ctrl + shift + p` and select `Dev Container: Rebuid and Reopen in Container`
+
 ## Features
 
 - feature:1
