@@ -21,8 +21,9 @@ public class SimpleAiController {
         return "Test endpoint is working!";
     }
 
-    @GetMapping("/ai/joke")
-    public String generate(@RequestParam(value = "message", defaultValue = "Tell me a funny joke in Japanese") String message) {
+    @GetMapping("/ai/recipe")
+    public String generate(
+            @RequestParam(value = "message", defaultValue = "Can you give me a recipe for a delicious dish in Japanese?") String message) {
         return chatClient.call(message);
     }
 }
