@@ -1,5 +1,7 @@
 # Getting Started with Azure OpenAI and Spring
 
+This project is a sample application for Spring AI and Azure OpenAI.
+
 ## Description
 
 ## Demo
