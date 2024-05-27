@@ -3,6 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Simple AI View</title>
+    <script>
+        function clearResponse() {
+            document.getElementById('response').innerText = '';
+            document.getElementById('message').value = ''; // Clear the text field
+        }
+    </script>
 </head>
 <body>
     <h2>Simple AI Interaction</h2>
@@ -13,11 +19,12 @@
         </p>
         <p>
             <input type="submit" value="Submit" />
+            <input type="button" value="Clear" onclick="clearResponse()" />
         </p>
     </form>
     <div>
         <p>Response:</p>
-        <p th:text="${response}"></p>
+        <p id="response" th:text="${response}"></p>
     </div>
 </body>
 </html>
