@@ -7,3 +7,7 @@ spring:
         embedding:
           options:
             deployment-name: "shinyay-gpt"
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html

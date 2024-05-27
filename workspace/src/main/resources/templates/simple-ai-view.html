@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple AI View</title>
+</head>
+<body>
+    <h2>Simple AI Interaction</h2>
+    <form action="#" th:action="@{/ai/recipe}" method="post">
+        <p>
+            <label for="message">Prompt:</label>
+            <input type="text" id="message" name="message" />
+        </p>
+        <p>
+            <input type="submit" value="Submit" />
+        </p>
+    </form>
+    <div>
+        <p>Response:</p>
+        <p th:text="${response}"></p>
+    </div>
+</body>
+</html>
