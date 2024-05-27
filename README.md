@@ -4,6 +4,10 @@ This project is a sample application for Spring AI and Azure OpenAI.
 
 ## Description
 
+The detailed procedure is written in the following document:
+
+- [README.md](./workspace/README.md)
+
 ## Demo
 
 ## Features
