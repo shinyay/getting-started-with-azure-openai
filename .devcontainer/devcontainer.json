@@ -23,7 +23,7 @@
 				// "vscjava.vscode-gradle",
 				"SonarSource.sonarlint-vscode",
 				"vmware.vscode-boot-dev-pack",
-				"MicroProfile-Community.vscode-microprofile-pack",
+				// "MicroProfile-Community.vscode-microprofile-pack",
 				"redhat.vscode-quarkus",
 				"GitHub.copilot"
 			],
