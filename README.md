@@ -19,6 +19,9 @@ Start from `ctrl + shift + p` and select `Dev Container: Rebuid and Reopen in Co
 
 ## Requirement
 
+- [Visual Studio Code - Insiders](https://code.visualstudio.com/insiders/)
+- [Visual Studio Code - Remote SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
+
 ## Prerequisites
 
 - An Azure subscription - [Create one for free](https://azure.microsoft.com/free/cognitive-services?azure-portal=true)
