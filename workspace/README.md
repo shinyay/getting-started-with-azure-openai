@@ -116,9 +116,9 @@ Create a Spring Boot Application with Spring AI for Azure OpenAI Service.
 - Add a method to generate message with Azure OpenAI
 - Method name is "generate"
 - This methos is accessed with GET METHOD
-- Endpoint is "/ai/joke"
+- Endpoint is "/ai/recipe"
 - Parameter value is message
-- Parameter default value is "Tell me a funny joke in Japanese"
+- Parameter default value is "Tell me a decliciou food recipe in Japanese"
 - Use call method with ChatClient when you call Azure OpenAI Service
 ```
 ## Demo
