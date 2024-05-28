@@ -88,6 +88,7 @@ Create a Spring Boot Application with Spring AI for Azure OpenAI Service.
 - Build tool is Maven
 - Java version is 21
 - Group ID is com.microsoft.shinyay
+- Artifact ID is java-on-azure
 ```
 
 #### 3.3 Properties for Spring AI
