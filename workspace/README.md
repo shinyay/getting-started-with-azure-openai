@@ -4,6 +4,10 @@ This project is a sample application for Spring AI and Azure OpenAI.
 
 ## Description
 
+### 0. Ask GitHub Copilot Chat for Spring AI
+
+![Image](https://github.com/shinyay/getting-started-with-azure-openai/assets/3072734/27d56084-53a5-4a10-9b2a-528e07badd5a)
+
 ### 1. Install Spring Boot CLI
 
 ```shell
