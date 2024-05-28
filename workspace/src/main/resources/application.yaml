@@ -1,3 +1,11 @@
 spring:
   application:
     name: spring-ai
+  ai:
+    azure:
+      openai:
+        api-key: "YOUR_API_KEY"
+        endpoint: "YOUR_ENDPOINT"
+        embedding:
+          options:
+            deployment-name: "YOUR_MODEL_NAME"
