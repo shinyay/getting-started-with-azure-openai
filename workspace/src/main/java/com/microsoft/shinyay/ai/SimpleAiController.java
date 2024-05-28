@@ -13,9 +13,9 @@ public class SimpleAiController {
         this.chatClient = chatClient;
     }
 
-    @GetMapping("/ai/joke")
-    public String getJoke() {
-        // Assuming the ChatClient has a method to generate a joke
-        return chatClient.generateJoke();
+    @GetMapping("/ai/recipe")
+    public String generateRecipe() {
+        // Assuming the ChatClient has a method to call Azure OpenAI Service
+        return chatClient.call("Tell me a delicious food recipe in Japanese");
     }
 }
