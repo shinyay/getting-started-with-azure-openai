@@ -114,7 +114,7 @@ Choose Azure OpenAI for Dependency.
 
 #### 3.4 Issue for REST Controller to Azure OpenAI Service
 
-- Title: Create a REST Controller for Azure OpenAI Service
+- Title: **Create a REST Controller for Azure OpenAI Service**
 
 ```markdown
 - Add Spring Boot Starter Web into pom.xml
