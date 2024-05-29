@@ -122,6 +122,8 @@ Choose Azure OpenAI for Dependency.
 - Import org.springframework.ai.chat.client.ChatClient
 - Initialize ChatClient using ChatClient.Builder
 - Add a method to send prompt and call response from Azure OpenAI using ChatClient
+  - GET Method with "/prompt" endpoint
+  - Parameter is prompt
   - Use chatClient.prompt().user().call().content() to interact with Azure OpenAI
 ```
 
@@ -133,7 +135,7 @@ Use chatClient.prompt().user(userInput).call().content(); to interact with Azure
 
 #### 3.5 Issue for ChatClient for prompt message
 
-- Title: Create a method for prompt
+- Title: **Create a method for prompt**
 
 ```markdown
 - Add a method to generate message with Azure OpenAI
