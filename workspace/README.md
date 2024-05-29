@@ -80,7 +80,7 @@ Create a Spring Boot Application with Spring AI for Azure OpenAI Service.
 #### 3.1 Create a project template with Spring Initializr
 
 - [Spring Initializr](https://start.spring.io/)
-
+  - [Spring AI](https://start.spring.io/#!type=maven-project&language=java&platformVersion=3.2.6&packaging=jar&jvmVersion=21&groupId=com.microsoft.shinyay&artifactId=java-on-azure&name=java-on-azure&description=Demo%20project%20for%20Spring%20AI&packageName=com.microsoft.shinyay.ai&dependencies=spring-ai-azure-openai)
 ![aoai](https://github.com/shinyay/getting-started-with-azure-openai/assets/3072734/f19ea71b-1fc0-4b86-8404-ff451d33127c)
 
 Choose Azure OpenAI for Dependency.
