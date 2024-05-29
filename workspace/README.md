@@ -85,11 +85,14 @@ Create a Spring Boot Application with Spring AI for Azure OpenAI Service.
 
 Choose Azure OpenAI for Dependency.
 
-#### 3.2 Modify a project template with Copilot Workspace
+#### 3.2 Issue for Modify a project template
+
+- Issue Title: Maven Project with Spring AI and Azure OpenAI
 
 ```markdown
 - Create a Spring Project with Spring AI
-- Spring AI version is 0.8.1
+- Spring Boot version is 3.3.0
+- Spring AI version is 1.0.0-M1
 - Use spring-ai-azure-openai-spring-boot-starter
 - Build tool is Maven
 - Java version is 21
@@ -97,26 +100,39 @@ Choose Azure OpenAI for Dependency.
 - Artifact ID is java-on-azure
 ```
 
-#### 3.3 Properties for Spring AI
+#### 3.3 Issue for Properties for Spring AI
+
+- Issue Title: Add application.yml for Azure OpenAI Service
 
 ```markdown
 - Add application.yml under resources
 - Add the following properties to application.yml
-  - spring.ai.azure.openai.api-key="YOUR_API_KEY"
-  - spring.ai.azure.openai.endpoint="YOUR_ENDPOINT"
-  - spring.ai.azure.openai.embedding.options.deployment-name="YOUR_MODEL_NAME"
+  - spring.ai.azure.openai.api-key=${SPRING_AI_AZURE_OPENAI_API_KEY}
+  - spring.ai.azure.openai.endpoint=${SPRING_AI_AZURE_OPENAI_ENDPOINT}
+  - spring.ai.azure.openai.embedding.options.deployment-name=${SPRING_AI_AZURE_OPENAI_EMBEDDING_OPTIONS_DEPLOYMENT_NAME}
 ```
 
-#### 3.4 Create a REST Controller
+#### 3.4 Issue for REST Controller to Azure OpenAI Service
+
+- Title: Create a REST Controller for Azure OpenAI Service
 
 ```markdown
 - Add Spring Boot Starter Web into pom.xml
 - Add a REST controller class named by SimpleAiController
-- Import org.springframework.ai.chat.ChatClient
-- Initialize ChatClient with Constructor Dependency Injection
+- Import org.springframework.ai.chat.client.ChatClient
+- Initialize ChatClient using ChatClient.Builder
+- Add a method to send prompt and call response from Azure OpenAI using ChatClient
 ```
 
-#### 3.5 Prompt for Azure OpenAI Service
+- Plan
+
+```markdown
+Use chatClient.prompt().user(userInput).call().content(); to interact with Azure OpenAI.
+```
+
+#### 3.5 Issue for ChatClient for prompt message
+
+- Title: Create a method for prompt
 
 ```markdown
 - Add a method to generate message with Azure OpenAI
@@ -128,11 +144,25 @@ Choose Azure OpenAI for Dependency.
 - Use call method with ChatClient when you call Azure OpenAI Service
 ```
 
-#### 3.6 View for prompt message
+#### 3.6 Issue for view for prompt message
+
+- Title: Create a view for SimpleViewController with Thymeleaf
 
 ```markdown
-- Create a view for SimpleAiController with Thymeleaf
-- The view should have 4 component. One is the text box to input a prompt. The other is a text field to display the result from SimpleAiContoller. And The last ones are a button to submit prompt and clear the text field.
+- Add a Thymeleaf dependency into pom.xml
+- Create a contorller class named by SimpleViewController
+- Add a thyemleaf view for SimpleViewController
+- The view should have the following 4 components.
+  - Text box to input a prompt
+  - Text aria to display the result from SimpleViewController
+  - Button to submit prompt
+  - Button to clear the text field
+- Add a method to hahdle post request from the view
+  - The method should return the view
+  - The method should have a model attribute to pass the view
+  - The method should call the generate method from SimpleAiController
+  - The method should replace new line with <br> tag
+  - The method should set the result to the model attribute
 - Decorate the screen by adding nice CSS
 ```
 
