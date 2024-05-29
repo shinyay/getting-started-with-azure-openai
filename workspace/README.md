@@ -96,8 +96,9 @@ Choose Azure OpenAI for Dependency.
 - Use spring-ai-azure-openai-spring-boot-starter
 - Build tool is Maven
 - Java version is 21
-- Group ID is com.microsoft.shinyay
+- Group ID is com.microsoft.shinyay.ai
 - Artifact ID is java-on-azure
+- Name is Java on Azure
 ```
 
 #### 3.3 Issue for Properties for Spring AI
