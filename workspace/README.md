@@ -102,7 +102,7 @@ Choose Azure OpenAI for Dependency.
 
 #### 3.3 Issue for Properties for Spring AI
 
-- Issue Title: Add application.yml for Azure OpenAI Service
+- Issue Title: **Add application.yml for Azure OpenAI Service**
 
 ```markdown
 - Add application.yml under resources
