@@ -87,7 +87,7 @@ Choose Azure OpenAI for Dependency.
 
 #### 3.2 Issue for Modify a project template
 
-- Issue Title: Maven Project with Spring AI and Azure OpenAI
+- Issue Title: **Maven Project with Spring AI and Azure OpenAI**
 
 ```markdown
 - Create a Spring Project with Spring AI
