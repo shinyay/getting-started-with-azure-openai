@@ -122,6 +122,7 @@ Choose Azure OpenAI for Dependency.
 - Import org.springframework.ai.chat.client.ChatClient
 - Initialize ChatClient using ChatClient.Builder
 - Add a method to send prompt and call response from Azure OpenAI using ChatClient
+  - Use chatClient.prompt().user().call().content() to interact with Azure OpenAI
 ```
 
 - Plan
