@@ -17,7 +17,8 @@ public class SimpleAiController {
     }
 
     @GetMapping("/prompt")
-    public String sendPromptAndReceiveResponse(@RequestParam(defaultValue = "Tell me about the benefit of Spring Framework") String prompt) {
+    public String sendPromptAndReceiveResponse(
+            @RequestParam(defaultValue = "Tell me about the benefit of Spring Framework") String prompt) {
         return chatClient.prompt().user(prompt).call().content();
     }
 }
