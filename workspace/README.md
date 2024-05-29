@@ -79,6 +79,12 @@ Create a Spring Boot Application with Spring AI for Azure OpenAI Service.
 
 #### 3.1 Create a project template with Spring Initializr
 
+- [Spring Initializr](https://start.spring.io/)
+
+![aoai](https://github.com/shinyay/getting-started-with-azure-openai/assets/3072734/f19ea71b-1fc0-4b86-8404-ff451d33127c)
+
+Choose Azure OpenAI for Dependency.
+
 #### 3.2 Modify a project template with Copilot Workspace
 
 ```markdown
