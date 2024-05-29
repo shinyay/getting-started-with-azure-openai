@@ -12,6 +12,31 @@ The detailed procedure is written in the following document:
 
 Start from `ctrl + shift + p` and select `Dev Container: Rebuid and Reopen in Container`
 
+### Reset Project
+
+- Remove the following files and directories
+
+```shell
+git rm workspace/src/main/java/com/microsoft/shinyay/ai/SimpleAiController.java
+git rm workspace/src/main/java/com/microsoft/shinyay/ai/SimpleViewController.java
+git rm -r workspace/src/main/resources/templates
+git rm -r workspace/src/main/resources/static
+```
+
+- Blank the following files
+  - workspace/src/main/resources/application.yml
+
+- Edit pom.xml to its initial state
+  - Remove the following dependencies
+    - spring-boot-starter-web
+    - spring-boot-starter-thymeleaf
+  - Change Spring Boot version to 3.2.6
+  - Change Spring AI version to 0.8.1
+  - Change Artifact ID to demo
+  - Change Application Name to demo
+  - Change Group ID to com.example
+
+
 ## Features
 
 - feature:1
