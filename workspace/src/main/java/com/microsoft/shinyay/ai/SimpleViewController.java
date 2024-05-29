@@ -22,7 +22,7 @@ public class SimpleViewController {
 
     @PostMapping("/generate")
     public String generatePrompt(@RequestParam("prompt") String prompt, Model model) {
-        String response = simpleAiController.sendPromptAndReceiveResponse(prompt).replace("\n", "<br>");
+        String response = simpleAiController.sendPromptAndReceiveResponse(prompt);
         model.addAttribute("response", response);
         return "simple-view";
     }
