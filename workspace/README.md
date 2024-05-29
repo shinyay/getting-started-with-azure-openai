@@ -121,6 +121,13 @@ Create a Spring Boot Application with Spring AI for Azure OpenAI Service.
 - Parameter default value is "Tell me a decliciou food recipe in Japanese"
 - Use call method with ChatClient when you call Azure OpenAI Service
 ```
+
+#### 3.6 View for prompt message
+
+```markdown
+- Create a view for SimpleAiController with Thymeleaf
+- The view should have 4 component. One is the text box to input a prompt. The other is a text field to display the result from SimpleAiContoller. And The last ones are a button to submit prompt and clear the text field.
+```
 ## Demo
 
 ```shell
