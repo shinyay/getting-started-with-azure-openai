@@ -138,14 +138,23 @@ Use chatClient.prompt().user(userInput).call().content(); to interact with Azure
 - Title: **Create a method for prompt**
 
 ```markdown
-- Add a method to generate message with Azure OpenAI
-- Method name is "generate"
+- Add a method to generate prompt, send Azure OpenAI and receive response
+- Method name is "callAzureOpenAI"
 - This methos is accessed with GET METHOD
-- Endpoint is "/ai/recipe"
-- Parameter value is message
-- Parameter default value is "Tell me a decliciou food recipe in Japanese"
+- Endpoint is "/prompt"
+- Parameter value is "prompt"
+- Parameter default value is "Tell me the benefit of Spring Framework in Japanese"
 - Use call method with ChatClient when you call Azure OpenAI Service
+  - Use chatClient.prompt().user().call().content() to interact with Azure OpenAI
 ```
+
+or
+
+```markdown
+- Add a method to generate message with Azure OpenAI
+- Default value of the parameter is "Tell me about the benefit of Spring Framework"
+```
+
 
 #### 3.6 Issue for view for prompt message
 
