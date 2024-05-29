@@ -158,7 +158,7 @@ or
 
 #### 3.6 Issue for view for prompt message
 
-- Title: Create a view for SimpleViewController with Thymeleaf
+- Title: **Create a view for SimpleViewController with Thymeleaf**
 
 ```markdown
 - Add a Thymeleaf dependency into pom.xml
