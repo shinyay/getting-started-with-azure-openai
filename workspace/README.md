@@ -134,7 +134,7 @@ Choose Azure OpenAI for Dependency.
 Use chatClient.prompt().user(userInput).call().content(); to interact with Azure OpenAI.
 ```
 ```markdown
-use ChatClient.Builder.build(); to initialize ChatClient.
+Use ChatClient.Builder.build() in Constructor; to initialize ChatClient.
 ```
 
 #### 3.5 Issue for ChatClient for prompt message
