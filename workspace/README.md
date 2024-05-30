@@ -128,7 +128,7 @@ Choose Azure OpenAI for Dependency.
   - Use chatClient.prompt().user().call().content() to interact with Azure OpenAI
 ```
 
-- Plan
+- Add Plan depends as needed
 
 ```markdown
 Use chatClient.prompt().user(userInput).call().content(); to interact with Azure OpenAI.
