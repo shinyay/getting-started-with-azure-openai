@@ -10,8 +10,8 @@ public class SimpleAiController {
 
     private final ChatClient chatClient;
 
-    public SimpleAiController() {
-        this.chatClient = new ChatClient.Builder().build();
+    public SimpleAiController(ChatClient.Builder chatClientBuilder) {
+        this.chatClient = chatClientBuilder.build();
     }
 
     @GetMapping("/prompt")
