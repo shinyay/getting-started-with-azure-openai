@@ -15,7 +15,7 @@ public class SimpleAiController {
     }
 
     @GetMapping("/prompt")
-    public String getPromptResponse(@RequestParam String prompt) {
+    public String callAzureOpenAI(@RequestParam(defaultValue = "Tell me the benefit of Spring Framework in Japanese") String prompt) {
         return chatClient.prompt().user(prompt).call().content();
     }
 }
