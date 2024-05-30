@@ -4,6 +4,6 @@ spring:
       openai:
         api-key: ${SPRING_AI_AZURE_OPENAI_API_KEY}
         endpoint: ${SPRING_AI_AZURE_OPENAI_ENDPOINT}
-        chat:
+        embedding:
           options:
-            deployment-name: ${SPRING_AI_AZURE_OPENAI_CHAT_OPTIONS_DEPLOYMENT_NAME}
+            deployment-name: ${SPRING_AI_AZURE_OPENAI_EMBEDDING_OPTIONS_DEPLOYMENT_NAME}
