@@ -11,13 +11,13 @@ public class SimpleAiController {
 
     private final ChatClient chatClient;
 
-    @Autowired
-    public SimpleAiController(ChatClient chatClient) {
-        this.chatClient = chatClient;
+    public SimpleAiController(ChatClient.Builder chatClientBuilder) {
+        this.chatClient = chatClientBuilder.build();
     }
 
     @GetMapping("/prompt")
-    public String sendPromptToAzureOpenAI(@RequestParam(value = "prompt", defaultValue = "Hello, Azure OpenAI!") String prompt) {
+    public String sendPromptToAzureOpenAI(
+            @RequestParam(value = "prompt", defaultValue = "Hello, Azure OpenAI!") String prompt) {
         return chatClient.prompt().user(prompt).call().content();
     }
 }
