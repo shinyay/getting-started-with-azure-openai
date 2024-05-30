@@ -110,7 +110,7 @@ Choose Azure OpenAI for Dependency.
 - Add the following properties to application.yml
   - spring.ai.azure.openai.api-key=${SPRING_AI_AZURE_OPENAI_API_KEY}
   - spring.ai.azure.openai.endpoint=${SPRING_AI_AZURE_OPENAI_ENDPOINT}
-  - spring.ai.azure.openai.embedding.options.deployment-name=${SPRING_AI_AZURE_OPENAI_EMBEDDING_OPTIONS_DEPLOYMENT_NAME}
+  - spring.ai.azure.openai.chat.options.deployment-name=${SPRING_AI_AZURE_OPENAI_CHAT_OPTIONS_DEPLOYMENT_NAME}
 ```
 
 #### 3.4 Issue for REST Controller to Azure OpenAI Service
