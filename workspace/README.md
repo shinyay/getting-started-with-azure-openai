@@ -176,7 +176,6 @@ or
 - Add a method to hahdle post request from the view
   - The method should return the view
   - The method should have a model attribute to pass the view
-  - The method should call the generate method from SimpleAiController
   - The method should set the result to the model attribute
 - Decorate the screen by adding nice CSS
 ```
