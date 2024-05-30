@@ -121,7 +121,7 @@ Choose Azure OpenAI for Dependency.
 - Add Spring Boot Starter Web into pom.xml
 - Add a REST controller class named by SimpleAiController
 - Import org.springframework.ai.chat.client.ChatClient
-- Initialize ChatClient using ChatClient.Builder
+- Initialize ChatClient using ChatClient.Builder.build()
 - Using ChatClient, add a method to send a prompt to Azure OpenAI and invoke a response
   - GET Method with "/prompt" endpoint
   - Parameter is prompt
