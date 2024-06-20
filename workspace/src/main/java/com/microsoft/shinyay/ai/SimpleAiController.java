@@ -14,8 +14,8 @@ public class SimpleAiController {
         this.chatClient = chatClientBuilder.build();
     }
 
-    @GetMapping("/prompt")
-    public String callAzureOpenAI(@RequestParam(defaultValue = "Tell me the benefit of Spring Framework in Japanese") String prompt) {
-        return chatClient.prompt().user(prompt).call().content();
+    @GetMapping("/ai/joke")
+    public String generate(@RequestParam(name = "message", defaultValue = "Tell me a funny joke in Japanese") String message) {
+        return chatClient.prompt().user(message).call().content();
     }
 }
